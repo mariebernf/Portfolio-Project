@@ -37,3 +37,12 @@ h2 {
 #contact {
     background-color: white;
 }
+
+#hero {
+    background-color: #dbdcde;
+    background-image: url(assets\images\portfolio-images\portfolio-images\background.webp);
+    background-size: cover;
+    background-position: 50% 70%;
+    min-height: 500px;
+    padding: 5%; 7%;
+}
