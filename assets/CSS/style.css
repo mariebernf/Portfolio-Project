@@ -10,8 +10,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
 body {
-    font-family: "Poppins" sans-serif;
-    background-color:  #a4c2d1; /* egg blue*/
+    font-family: "Poppins", sans-serif;
+    background-color: #a4c2d1; /* egg blue */
 }
 
 h1,
@@ -25,6 +25,17 @@ h2 {
     border-radius: 0;
 }
 
+/* Buttons */
+
+.custom-button {
+    background-color: #1f7798;
+    border: #1f7798
+}
+
+.custom-button:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a
+}
 
 /* About section */
 
@@ -39,23 +50,29 @@ h2 {
 }
 
 #portfolio .card-title {
-    color: #1f7798;
+    color: #1f7798; /* mid blue */
     font-size: 1.2rem;
 }
 
-#portfolio .btn.outline-secondary:hover {
+#portfolio .btn-outline-secondary:hover {
     background-color: #1f7798; /* mid blue */
 }
 
-/* Content section */
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+/* Contact section */
 
 #contact {
     background-color: white;
 }
 
+/* Header */
+
 #hero {
-    background-color: #dbdcde;
-    background-image: url(assets\images\portfolio-images\portfolio-images\background.webp);
+    background-color: #dbdcde; /* light grey */
+    background-image: url("../images/background.webp");
     background-size: cover;
     background-position: 50% 70%;
     min-height: 500px;
@@ -68,6 +85,6 @@ h2 {
 @media screen and (min-width: 1200px) {
     /* Fixes all portfolio cards being too tall on xl screens */
     #portfolio .card-text {
-        min height: auto;
-    }
+        min-height: auto;
+    }    
 }
